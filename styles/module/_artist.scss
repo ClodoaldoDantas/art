@@ -1,0 +1,36 @@
+.artist {
+  position: relative;
+  height: 30.25rem; /* 484px */
+  width: 100%;
+
+  padding: 1.5rem;
+
+  &--one {
+    @include generate-cover('../assets/artist-01.jpg');
+  }
+
+  &--two {
+    @include generate-cover('../assets/artist-02.jpg');
+  }
+
+  &--three {
+    @include generate-cover('../assets/artist-03.jpg');
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    display: block;
+    color: var(--gray-200);
+    margin-bottom: 0.5rem;
+
+    @media only screen and(min-width: 1200px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__profession {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-300);
+  }
+}

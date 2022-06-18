@@ -1,0 +1,26 @@
+.l-artists {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @media only screen and(min-width: 1200px) {
+      margin-top: 5rem;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media only screen and(min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and(min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

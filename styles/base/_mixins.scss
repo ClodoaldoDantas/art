@@ -1,0 +1,12 @@
+@mixin generate-cover($image) {
+  background: linear-gradient(
+      0deg,
+      rgba(12, 12, 12, 0.2),
+      rgba(12, 12, 12, 0.2)
+    ),
+    url($image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
